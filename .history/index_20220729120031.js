@@ -122,7 +122,6 @@ function getInningScore(innings) {
 return{
   Home: homeScore,
   Away: awayScore
-  
 }
 
 }
