@@ -65,10 +65,18 @@ NOTE: This will be a callback function for the tasks below
 */
 
 function inning(){
-    return Math.floor(Math.random() * Math.floor(3));
+    const score = math.random()
+    if(score < 0.3333){
+      score = 0
+    }
+    else if(score > 0.3333 && score < 0.6666){
+      score = 1
+    }
+    else{score = 2};
+    return score
 }
 
-console.log('task 2:' ,inning());
+console.log(inning());
 
 
 /* ⚾️⚾️⚾️ Task 3: finalScore() ⚾️⚾️⚾️
@@ -85,20 +93,10 @@ Use the finalScore function below to do the following:
 }
 */ 
 
-function finalScore(innings, number){
-  let homeScore = 0;
-  let awayScore = 0;
-  for( let i = 0; i < number; i++){
-    homeScore = homeScore + inning();
-    awayScore = awayScore + inning();
-  }
-return{
-  Home: homeScore,
-  Away: awayScore
-}
+function finalScore(/*Code Here*/){
+  /*Code Here*/
 }
 
-console.log('task 3:' ,finalScore(inning(), 9));
 
 /* ⚾️⚾️⚾️ Task 4: getInningScore() ⚾️⚾️⚾️
 Use the getInningScore() function below to do the following:
@@ -113,20 +111,11 @@ For example: invoking getInningScore(inning) might return this object:
   */
 
 
-function getInningScore(innings) {
-  let homeScore = 0;
-  let awayScore = 0;
- 
-    homeScore = homeScore + inning();
-    awayScore = awayScore + inning();
-return{
-  Home: homeScore,
-  Away: awayScore
-}
+function getInningScore(/*Your Code Here */) {
+  /*Your Code Here */
 
 }
 
-console.log(getInningScore(inning()));
 
 /* STRETCH: ⚾️⚾️⚾️ Task 5: scoreboard() ⚾️⚾️⚾️
 Use the scoreboard function below to do the following:

@@ -30,12 +30,12 @@ console.log('example task:', processFirstItem(['foo','bar'],function(str){return
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
-  counter1 is a has a closure fuction mean it will store the count insdie and go up by one every time it is involved, while counter2 with alway only count up to 1 and never store anything
+  
   2. Which of the two uses a closure? How can you tell?
-  counter1 uses a closure. I can tell because it has a function(counter) inside that will store the count.
+  
   3. In what scenario would the counter1 code be preferable? In what scenario would 
      counter2 be better?  
-    counter1 would be useful in a ping-pong game where you use it everytime some one scores. counter 2 would be useful if you need to count something one time or if you need to count something that keeps resetting like when it hit midnight everyday*/   
+*/
 
 // counter1 code
 function counterMaker() {
@@ -64,11 +64,9 @@ Use the inning function below to do the following:
 NOTE: This will be a callback function for the tasks below
 */
 
-function inning(){
-    return Math.floor(Math.random() * Math.floor(3));
+function inning(/*Code Here*/){
+    /*Code Here*/
 }
-
-console.log('task 2:' ,inning());
 
 
 /* ⚾️⚾️⚾️ Task 3: finalScore() ⚾️⚾️⚾️
@@ -85,20 +83,10 @@ Use the finalScore function below to do the following:
 }
 */ 
 
-function finalScore(innings, number){
-  let homeScore = 0;
-  let awayScore = 0;
-  for( let i = 0; i < number; i++){
-    homeScore = homeScore + inning();
-    awayScore = awayScore + inning();
-  }
-return{
-  Home: homeScore,
-  Away: awayScore
-}
+function finalScore(/*Code Here*/){
+  /*Code Here*/
 }
 
-console.log('task 3:' ,finalScore(inning(), 9));
 
 /* ⚾️⚾️⚾️ Task 4: getInningScore() ⚾️⚾️⚾️
 Use the getInningScore() function below to do the following:
@@ -113,20 +101,11 @@ For example: invoking getInningScore(inning) might return this object:
   */
 
 
-function getInningScore(innings) {
-  let homeScore = 0;
-  let awayScore = 0;
- 
-    homeScore = homeScore + inning();
-    awayScore = awayScore + inning();
-return{
-  Home: homeScore,
-  Away: awayScore
-}
+function getInningScore(/*Your Code Here */) {
+  /*Your Code Here */
 
 }
 
-console.log(getInningScore(inning()));
 
 /* STRETCH: ⚾️⚾️⚾️ Task 5: scoreboard() ⚾️⚾️⚾️
 Use the scoreboard function below to do the following:

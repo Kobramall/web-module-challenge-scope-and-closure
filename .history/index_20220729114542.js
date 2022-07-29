@@ -65,7 +65,15 @@ NOTE: This will be a callback function for the tasks below
 */
 
 function inning(){
-    return Math.floor(Math.random() * Math.floor(3));
+    let score = Math.random()
+    if(score < 0.3333){
+      score = 0
+    }
+    else if(score > 0.3333 && score < 0.6666){
+      score = 1
+    }
+    else{score = 2};
+    return score
 }
 
 console.log('task 2:' ,inning());
@@ -88,9 +96,9 @@ Use the finalScore function below to do the following:
 function finalScore(innings, number){
   let homeScore = 0;
   let awayScore = 0;
-  for( let i = 0; i < number; i++){
-    homeScore = homeScore + inning();
-    awayScore = awayScore + inning();
+  for( let i =0; i < number; i++){
+    homeScore = homeScore + innings
+    awayScore = awayScore + innings
   }
 return{
   Home: homeScore,
@@ -113,20 +121,11 @@ For example: invoking getInningScore(inning) might return this object:
   */
 
 
-function getInningScore(innings) {
-  let homeScore = 0;
-  let awayScore = 0;
- 
-    homeScore = homeScore + inning();
-    awayScore = awayScore + inning();
-return{
-  Home: homeScore,
-  Away: awayScore
-}
+function getInningScore(/*Your Code Here */) {
+  /*Your Code Here */
 
 }
 
-console.log(getInningScore(inning()));
 
 /* STRETCH: ⚾️⚾️⚾️ Task 5: scoreboard() ⚾️⚾️⚾️
 Use the scoreboard function below to do the following:
